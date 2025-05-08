@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+      "color": {
+          "palette": [
+              { "name": "Primary", "slug": "primary", "color": "#ff758c" },
+              { "name": "Secondary", "slug": "secondary", "color": "#ff7eb3" }
+          ],
+          "gradients": [
+              {
+                  "name": "Sunset",
+                  "slug": "sunset",
+                  "gradient": "linear-gradient(135deg, #ff7eb3, #ff758c)"
+              }
+          ]
+      },
+      "typography": {
+          "fontFamilies": [
+              {
+                  "name": "Inter",
+                  "slug": "inter",
+                  "fontFace": [
+                      {
+                          "fontFamily": "Inter",
+                          "src": [ "file:./assets/fonts/Inter.woff2" ]
+                      }
+                  ]
+              }
+          ],
+          "fontSizes": [
+              { "name": "Small", "slug": "small", "size": "14px" },
+              { "name": "Large", "slug": "large", "size": "32px" }
+          ]
+      },
+      "layout": {
+          "contentSize": "800px",
+          "wideSize": "1200px"
+      }
+  },
+  "styles": {
+      "color": {
+          "background": "#ffffff",
+          "text": "#333333"
+      },
+      "typography": {
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "1.6"
+      }
+  },
+  "templateParts": [
+      {
+          "name": "homepage-banner",
+          "title": "Homepage Banner",
+          "area": "uncategorized"
+      }
+  ]
+}

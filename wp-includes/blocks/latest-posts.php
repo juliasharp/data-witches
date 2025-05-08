@@ -199,9 +199,8 @@ function render_block_core_latest_posts( $attributes ) {
 	if ( isset( $attributes['postLayout'] ) && 'grid' === $attributes['postLayout'] ) {
 		$classes[] = 'is-grid';
 	}
-	//updated columns to read from 'postsToShow attribute
 	if ( isset( $attributes['columns'] ) && 'grid' === $attributes['postLayout'] ) {
-		$classes[] = 'columns-' . $attributes['postsToShow'];
+		$classes[] = 'columns-' . $attributes['columns'];
 	}
 	if ( isset( $attributes['displayPostDate'] ) && $attributes['displayPostDate'] ) {
 		$classes[] = 'has-dates';
